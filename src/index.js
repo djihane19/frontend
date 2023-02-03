@@ -2,10 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Login from "./Components/login/Login";
 import reportWebVitals from './reportWebVitals';
-import Signup from './Components/Signup/Signup';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/Nav/Navbar';
 import CardComponenet from './Components/CardComponenet';
 import Hero from './Components/Hero';
 

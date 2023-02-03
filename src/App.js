@@ -1,12 +1,10 @@
 import React from "react";
 import './App.css';
-import Navbar from "./Components/Navbar";
-import Login from "./Components/login/Login";
-import Signup from "./Components/Signup/Signup";
+import Navbar from "././Components/Nav/Navbar";
 import Hero from "./Components/Hero";
 import NewAnnonces from "./Components/NewAnnonces";
-import Footer from "./Components/Footer";
-import'bootstrap/dist/css/bootstrap.min.css'
+import Footer from "./Components/footer/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import FormInput from "./Components/FormInput";
 import Featured from "./Components/featured/Featured";
 import {BrowserRouter, Router,Routes, Route, Link} from "react-router-dom"
@@ -15,6 +13,7 @@ import Services from "./Services"
 import About from "./Components/about/About";
 import Recent from "./Components/recent/Recent";
 import Contact from "./Components/contact/Contact";
+import Login from "./Components/Inscription/Login";
 
   
 
@@ -25,19 +24,15 @@ function App() {
   <BrowserRouter>
    <div className="App">
    {/* Navbar */}
-   <Navbar />
+  
    <Routes>
    {/* Hero *//*Type des immobiliers*/}
-   <Route path="/" element={<Home/>} />
+{/*<Route path="/" element={<Home/>} />*/}
    <Route path="Acceuil" element={<Home/>} />
-   
-   <Route path="/Connexion" element={<Login/>} />
-   <Route path="/Inscription" element={<Signup/>} />
    <Route path="/About" element={<About/>} />
    <Route path="/Services" element={<Services/>} />
    <Route path="/Contact" element={<Contact/>} />
-
-   <Route path="/Connextion" element={<Login/>} />
+   <Route path="/" element={<Login/>} />
    
    </Routes>
    

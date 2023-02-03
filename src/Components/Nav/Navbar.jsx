@@ -1,14 +1,13 @@
 import React from "react";
 import { FiMenu } from "react-icons/fi";
-import logo from "../assests/hose.png";
+import logo from "../../assests/hose.png";
 import { HiOutlineUser } from "react-icons/hi";
 import NavBin from'./NavBin';
 import {Link} from "react-router-dom";
-import Login from "./login/Login";
-import Signup from "./Signup/Signup";
-import {AiOutlineHeart} from 'react-icons/ai'
-import {AiTwotoneHeart} from 'react-icons/ai'
-import  { RiSearchLine } from 'react-icons/ri'
+import "./nav.css"
+import img from "../../assests/profilepic.webp"
+import AddToPhotosIcon from "@mui/icons-material/AddToPhotos";
+import {FaRegCommentDots,FaClinicMedical} from 'react-icons/fa'
 
 const Navbar =() =>{
     const buttons =[
@@ -42,34 +41,33 @@ const Navbar =() =>{
             </ul>
         </div>
         
-   
-          <div className=" w-10 h-10 bg-[#e20112] rounded-full text-white flex items-center justify-center lg:hidden " >
-           <HiOutlineUser className="text-[30px] " />
-          </div>
            
 
-          <div className="hidden items-center lg:flex  ">
-            {" "}
-            <div className="" > 
-            <div className='  text-[30px] cursor-pointer ' title="Favoris">
-                <AiOutlineHeart />
-               
-            </div>
-            </div>
             <div className="menu-baro">
-          <div className=" bg-[#e20112] py-[6px] text-white rounded-full px-4 ml-6 flex items-center " > 
-          Connexion
+              
+          <ul className="list"> 
+             <li className="icon w-32" title="Messagerie"> <FaRegCommentDots/></li>
+              <li className="icon w-32" title="Poster announce"><FaClinicMedical/></li>
+              <div className="hidden items-center lg:flex  ">
+            {" "}
+            <div className="showup">
+          <div className=" bg-[#e20112]  rounded-full flex items-center " > 
+          <img src={img} alt="" className="avatar"/>
           <div class="sub-menu">
           <ul>
-            <li><Link className="link" to="Inscription">Inscription</Link></li>
-            <li><Link  className="link" to="Connexion"> Connexion</Link></li>
-            <li>Mettre mon logement</li>
+            <li className="a"><Link  className="link" to="Connexion"> Paramètre</Link></li>
+            <li className="a"><Link  className="link" to="Connexion"> Mes announces</Link></li>
+            <li className="a"><Link  className="link" to="Connexion"> déconnecter</Link></li>
+           
+            
           </ul>
           </div>
           </div>
+          </div>
+          </div></ul>
 </div>
        
-    </div>
+    
     </div>
     </div>
  );

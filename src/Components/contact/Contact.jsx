@@ -2,10 +2,12 @@ import React from "react"
 import img from "../../assests/cantact1.jpg"
 import Back from "../common/Back"
 import "./contact.css"
+import Navbar from "../Nav/Navbar";
 
 const Contact = () => {
   return (
     <>
+   <Navbar/>
    
       <section className='contact mb'>
         < br></br>

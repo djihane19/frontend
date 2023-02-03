@@ -11,6 +11,7 @@
   .contact input {
     margin-bottom: 20px;
     margin-right: 10px;
+    width: 100%;
   }
   .contact form {
     padding: 30px;

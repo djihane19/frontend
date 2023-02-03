@@ -4,10 +4,12 @@ import Heading from "../common/Heading"
 import img from "../../assests/AboutA1.jpg"
 import imt from "../../assests/aboutA2.jpg"
 import "./about.css"
+import Navbar from "../Nav/Navbar";
 
 const About = () => {
   return (
     <>
+     <Navbar/>
       <section className='about'>
         <br/> <br/>
         <Back name='À propos de nous' title='À propos de nous - Qui sommes-nous ?' cover={img}  />
